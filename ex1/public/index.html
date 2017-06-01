@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>VueEx</title>
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+<body>
+	<div id="app">
+		<input v-model="fullName" placeholder="Name😁">
+		 <h1 v-if="fullName.length > 0">Hello, {{fullName}}</h1>
+	</div>
+	<script src="/main.js"></script>
+</body>
+</html>

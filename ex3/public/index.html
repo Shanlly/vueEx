@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>VueEx</title>
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+<body>
+	<div id="app">
+		<div v-bind:style='{"background-color": colorOne}'>
+			<h2> First Color</h2>
+		</div>
+		<div class="row">
+			<input v-model="colorOneA" placeholder="red number">
+			<input v-model="colorOneB" placeholder="green number">
+			<input v-model="colorOneC" placeholder="blue number">
+		</div>
+		<div v-bind:style='{"background-color": colorTwo}'>
+			<h2>Second Color</h2>
+		</div>
+		<div class="row">
+			<input v-model="colorTwoA" placeholder="red number">
+			<input v-model="colorTwoB" placeholder="green number">
+			<input v-model="colorTwoC" placeholder="blue number">
+		</div>
+		<div v-bind:style='{"background-color": mergedColor}'>
+			<h2>Merged Color</h2>
+		</div>
+
+	</div>
+	<script src="/main.js"></script>
+</body>
+</html>
